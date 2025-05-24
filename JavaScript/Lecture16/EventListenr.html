@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture13</title>
+  </head>
+  <body>
+    <nav class="block"><p class="navbar">Welcome To Website</p></nav>
+    <div>
+      <h3 id="change">Hey There i am vipin sao</h3>
+      <br />
+      <br />
+      <p class="block">Here is a code for you</p>
+      <pre><code class="block">console.log("hey There!!")</code></pre>
+
+      <button>Click Me</button>
+    </div>
+  </body>
+  <script>
+    let click = false;
+    const btn = document.querySelector("button");
+    btn.addEventListener("click", function () {
+      if (!click) {
+        btn.style.backgroundColor = "green";
+        btn.textContent = "Clicked";
+        btn.style.color = "white";
+        click = true;
+      } else {
+        btn.style.backgroundColor = "";
+        btn.style.color = "black";
+        btn.textContent = "Click Me";
+        click = false;
+      }
+    });
+    let click2 = false;
+    const change = document.getElementById("change");
+    btn.addEventListener("click", () => {
+      if (!click2) {
+        change.style.color = "red";
+        click2 = true;
+      } else {
+        change.style.color = "black";
+        click2 = false;
+      }
+    });
+
+    // const allChildren = document.querySelector("body").children;
+    // for (let i = 0; i < allChildren.length; i++) {
+    //   allChildren.item(i).addEventListener("click", () => {
+    //     allChildren.item(i).remove();
+    //   });
+    // }
+  </script>
+</html>

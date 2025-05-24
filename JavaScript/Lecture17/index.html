@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture17</title>
+  </head>
+  <body>
+    <nav class="block"><p class="navbar">Welcome To Website</p></nav>
+    <div>
+      <h3 id="change">Hey There i am vipin sao</h3>
+      <br />
+      <br />
+      <p class="block">Here is a code for you</p>
+      <pre><code class="block">console.log("hey There!!")</code></pre>
+
+      <div id="container"></div>
+
+      <button>Click Me</button>
+    </div>
+  </body>
+  <script>
+    const btn = document.querySelector("button");
+    const container = document.getElementById("container");
+    btn.addEventListener("click", () => {
+      const el = document.createElement("h1");
+      el.textContent = "Hey There!!";
+      container.appendChild(el);
+    });
+  </script>
+</html>
