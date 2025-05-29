@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <!-- //creating nav bar -->
+    <nav class="bg-blue-400 font-serif">
+      <div
+        class="w-full p-3 flex justify-between items-center border border-b-2"
+      >
+        <div class="px-2">
+          <h3 class="color-red cursor-pointer hover:text-violet-800">Learn</h3>
+        </div>
+        <div class="gap-2 flex flex-row">
+          <h3 class="cursor-pointer hover:text-violet-800">Profile</h3>
+          <h3 class="cursor-pointer hover:text-violet-800">Skill</h3>
+          <h3 class="cursor-pointer hover:text-violet-800">About</h3>
+          <h3 class="cursor-pointer hover:text-violet-800">Sign In</h3>
+        </div>
+      </div>
+    </nav>
+
+    <!-- main form  -->
+    <div class="bg-blue-200 w-full h-[86vh] font-serif">
+      <div class="p-8">
+        <form
+          id="myform"
+          method="post"
+          action="/submit"
+          class="flex flex-col justify-center items-center gap-4"
+        >
+          <div class="flex items-center gap-12 lg:w-[50%] sm:w-[80%]">
+            <label for="Name" class="text-xl">Name :</label>
+            <input
+              type="text"
+              name="name"
+              placeholder="Enter your Name"
+              class="border border-2 p-1 px-2 rounded-lg w-[70%]"
+            />
+          </div>
+
+          <div class="flex items-center gap-12 lg:w-[50%] sm:w-[80%]">
+            <label for="Name" class="text-xl">Email :</label>
+            <input
+              name="email"
+              type="email"
+              placeholder="Enter your Email"
+              class="border border-2 p-1 px-2 rounded-lg w-[70%]"
+            />
+          </div>
+
+          <div class="flex items-center gap-4 lg:w-[50%] sm:w-[80%]">
+            <label for="Name" class="text-xl">Password :</label>
+            <input
+              name="password"
+              type="password"
+              placeholder="Enter your Password"
+              class="border border-2 p-1 px-2 rounded-lg w-[70%]"
+            />
+          </div>
+
+          <div class="flex items-center gap-14 lg:w-[50%] sm:w-[80%]">
+            <label for="Name" class="text-xl">DOB :</label>
+            <input
+              name="dob"
+              type="date"
+              placeholder="Enter your date of birth"
+              class="border border-2 p-1 px-2 rounded-lg w-[70%]"
+            />
+          </div>
+
+          <div class="flex items-center gap-3 lg:w-[50%] sm:w-[80%]">
+            <label for="Name" class="text-xl">Phone No :</label>
+            <input
+              type="phone"
+              name="phone"
+              placeholder="Enter your phone number"
+              class="border border-2 p-1 px-2 rounded-lg w-[70%]"
+            />
+          </div>
+          <button
+            type="submit"
+            class="border border-1 rounded-md p-1 w-[40%] mt-2 text-gray-200 text-xl bg-blue-600 hover:bg-blue-800 cursor-pointer"
+          >
+            Submit
+          </button>
+        </form>
+        <button
+          id="read"
+          type="button"
+          class="border border-1 rounded-md p-1 w-[40%] mt-2 text-gray-200 text-xl bg-green-600 hover:bg-green-800 cursor-pointer"
+        >
+          Read Data
+        </button>
+        <div id="response" class="flex flex-row text-sm"></div>
+      </div>
+    </div>
+
+    <footer class="bg-blue-400 font-serif">
+      <div
+        class="w-full p-3 flex justify-between items-center border border-b-2"
+      >
+        <div class="px-2">
+          <h3 class="color-red cursor-pointer hover:text-violet-800">
+            Created By Vipin all rights reserved
+          </h3>
+        </div>
+        <div class="gap-2 flex flex-row">
+          <h3 class="cursor-pointer hover:text-violet-800">Profile</h3>
+          <h3 class="cursor-pointer hover:text-violet-800">About</h3>
+          <h3 class="cursor-pointer hover:text-violet-800">Help</h3>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>
