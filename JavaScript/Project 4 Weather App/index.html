@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Project</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <div class="min-h-screen flex flex-col">
+      <!-- creating navbar -->
+      <nav
+        class="flex items-center justify-between px-2 border border-1 bg-blue-100"
+      >
+        <div>
+          <img
+            src="/cloudy.png"
+            alt="Weather icon"
+            class="w-[70px] h-[70px] p-4"
+          />
+        </div>
+        <div>
+          <ul class="flex gap-5 text-zinc-900 select-none">
+            <li class="cursor-pointer">About</li>
+            <li class="cursor-pointer">Created By</li>
+            <li class="cursor-pointer">Sign In</li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- created main weather element  -->
+      <main class="flex-grow flex justify-center items-center mb-4">
+        <div class="w-[70%] h-[70vh] border border-2 p-2 mt-12">
+          <!-- its for current location search location and 7 days location  -->
+          <div class="flex justify-between items-center px-10 border-b-2">
+            <h3 class="py-2">
+              <span class="cursor-pointer border-1 py-1 px-2 rounded-md"
+                >Your Location</span
+              >
+            </h3>
+            <div class="flex gap-4 w-[70%]">
+              <input id="cityData" type="text" placeholder="Enter city name..." class="mb-2 border-1 p-2 w-[70%]">
+              <h3 class="py-2">
+                <span id="getCity" class="cursor-pointer border-1 py-1 px-2 rounded-md"
+                  >Search Location</span
+                >
+            </div>
+            
+            </h3>
+          </div>
+          <!-- the weather content area  -->
+          <div>
+            <h1>Hello this is content area ok</h1>
+          </div>
+        </div>
+      </main>
+
+      <!-- footer section  -->
+      <footer
+        class="flex justify-between items-center px-4 py-2 mt-6 border-t-2 bg-blue-200"
+      >
+        <div>
+          <h3>
+            Created By <span class="text-xl text-zinc-900">Vipin Sao</span>
+          </h3>
+        </div>
+        <div>
+          <ul class="flex gap-5 px-2">
+            <li>Contact us</li>
+            <li>Help</li>
+            <li>About</li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
