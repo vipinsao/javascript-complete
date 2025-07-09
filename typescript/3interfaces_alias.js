@@ -28,3 +28,11 @@ function Test(obj) {
     obj.surname;
 }
 let a2;
+////Intersection and Union
+//this one is union example
+let help;
+function ABCD(a) {
+    a.email;
+    a.getDetails;
+    a.name;
+}

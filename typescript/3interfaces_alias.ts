@@ -70,5 +70,24 @@ function Test(obj: hello) {
 ////Type Alias--------->>>>>>>>>>>>>>>>
 
 type sao = number | string | null;
-
 let a2: sao;
+
+////Intersection and Union
+//this one is union example
+let help: string | null;
+
+//this one is Intersection example
+type Practice = {
+  name: string;
+  email: string;
+};
+
+type Admin = Practice & {
+  getDetails(user: string): void;
+};
+
+function ABCD(a: Admin) {
+  a.email;
+  a.getDetails;
+  a.name;
+}
